@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 8px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Marks Calculator</h2>
+
+    <input type="text" id="name" placeholder="Student Name"><br>
+
+    <input type="number" id="mark1" placeholder="Subject 1">
+    <input type="number" id="mark2" placeholder="Subject 2">
+    <input type="number" id="mark3" placeholder="Subject 3">
+    <input type="number" id="mark4" placeholder="Subject 4">
+    <input type="number" id="mark5" placeholder="Subject 5">
+    <br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Total Marks</th>
+            <th>Percentage</th>
+        </tr>
+
+        <tbody id="studentTable">
+        </tbody>
+    </table>
+
+    <script>
+        function calculate() {
+            var name = document.getElementById("name").value;
+
+            var mark1 = Number(document.getElementById("mark1").value);
+            var mark2 = Number(document.getElementById("mark2").value);
+            var mark3 = Number(document.getElementById("mark3").value);
+            var mark4 = Number(document.getElementById("mark4").value);
+            var mark5 = Number(document.getElementById("mark5").value);
+
+            var total = mark1 + mark2 + mark3 + mark4 + mark5;
+            var percentage = (total / 500) * 100;
+
+            var table = document.getElementById("studentTable");
+
+            var row = table.insertRow();
+
+            row.insertCell(0).innerHTML = name;
+            row.insertCell(1).innerHTML = total;
+            row.insertCell(2).innerHTML = percentage + "%";
+        }
+    </script>
+
+</body>
+</html>
