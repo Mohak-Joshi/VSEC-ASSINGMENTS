@@ -3,6 +3,9 @@
 
 <head>
     <title>My WatchList</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,7 +18,7 @@
 
     <h2>🎥 My Movies</h2>
 
-    <table border="1">
+    <table>
 
         <tr>
             <th>Movie</th>
@@ -25,29 +28,33 @@
             <th>Status</th>
         </tr>
 
-        <tr>
-            <td>Interstellar</td>
-            <td>2014</td>
-            <td>Sci-Fi</td>
-            <td>⭐ 9/10</td>
-            <td>✅ Watched</td>
-        </tr>
+        <tbody id="movieTable">
 
-        <tr>
-            <td>Avengers: Endgame</td>
-            <td>2019</td>
-            <td>Action</td>
-            <td>⭐ 8.5/10</td>
-            <td>✅ Watched</td>
-        </tr>
+            <tr>
+                <td>Interstellar</td>
+                <td>2014</td>
+                <td>Sci-Fi</td>
+                <td>⭐ 9/10</td>
+                <td>✅ Watched</td>
+            </tr>
 
-        <tr>
-            <td>Inception</td>
-            <td>2010</td>
-            <td>Sci-Fi</td>
-            <td>⭐ 9/10</td>
-            <td>📋 Plan to Watch</td>
-        </tr>
+            <tr>
+                <td>Avengers: Endgame</td>
+                <td>2019</td>
+                <td>Action</td>
+                <td>⭐ 8.5/10</td>
+                <td>✅ Watched</td>
+            </tr>
+
+            <tr>
+                <td>Inception</td>
+                <td>2010</td>
+                <td>Sci-Fi</td>
+                <td>⭐ 9/10</td>
+                <td>📋 Plan to Watch</td>
+            </tr>
+
+        </tbody>
 
     </table>
 
@@ -55,7 +62,7 @@
 
     <h2>📺 TV Series</h2>
 
-    <table border="1">
+    <table>
 
         <tr>
             <th>Series</th>
@@ -105,31 +112,27 @@
 
     <h2>📝 Add a Movie</h2>
 
-    <form>
+    <form id="movieForm">
 
         <label>Movie Name:</label>
-        <input type="text">
-
+        <input type="text" id="movieName">
         <br><br>
 
         <label>Year:</label>
-        <input type="number">
-
+        <input type="number" id="movieYear">
         <br><br>
 
         <label>Genre:</label>
-        <input type="text">
-
+        <input type="text" id="movieGenre">
         <br><br>
 
         <label>Rating:</label>
-        <input type="number" min="0" max="10">
-
+        <input type="number" id="movieRating" min="0" max="10" step="0.1">
         <br><br>
 
         <label>Status:</label>
 
-        <select>
+        <select id="movieStatus">
             <option>Watched</option>
             <option>Currently Watching</option>
             <option>Plan to Watch</option>
@@ -140,6 +143,10 @@
         <button type="submit">Add Movie</button>
 
     </form>
+
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 
