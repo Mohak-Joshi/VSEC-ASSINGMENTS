@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #edf2f7;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000020;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+h1 {
+  margin-top: 25px;
+  color: #2563eb;
+  overflow-wrap: anywhere;
+}
