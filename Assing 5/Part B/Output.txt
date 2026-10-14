@@ -1,0 +1,72 @@
+
+{
+  acknowledged: true,
+  insertedId: ObjectId('...')
+}
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('...'),
+    '1': ObjectId('...'),
+    '2': ObjectId('...')
+  }
+}
+
+{
+  _id: ObjectId('...'),
+  name: 'Sudarshan',
+  Div: 'A',
+  branch: 'IT',
+  roll_no: NumberInt('110')
+}
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: NumberInt('1'),
+  modifiedCount: NumberInt('1'),
+  upsertedCount: NumberInt('0')
+}
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: NumberInt('1'),
+  modifiedCount: NumberInt('1'),
+  upsertedCount: NumberInt('0')
+}
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: NumberInt('1'),
+  modifiedCount: NumberInt('1'),
+  upsertedCount: NumberInt('0')
+}
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: NumberInt('1'),
+  modifiedCount: NumberInt('1'),
+  upsertedCount: NumberInt('0')
+}
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: NumberInt('0'),
+  modifiedCount: NumberInt('0'),
+  upsertedCount: NumberInt('0')
+}
+
+{
+  acknowledged: true,
+  deletedCount: NumberInt('1')
+}
+
+{
+  acknowledged: true,
+  deletedCount: NumberInt('1')
+}
