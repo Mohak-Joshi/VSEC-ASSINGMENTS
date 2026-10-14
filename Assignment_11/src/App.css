@@ -1,0 +1,70 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0eaff;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mood-card {
+  width: 350px;
+  max-width: 100%;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000020;
+}
+
+.mood-card h1 {
+  color: #6d28d9;
+}
+
+.mood-card input,
+.mood-card select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 18px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.mood-card label {
+  display: block;
+  text-align: left;
+}
+
+.message {
+  margin: 10px 0 20px;
+  padding: 15px;
+  background-color: #f5f0ff;
+  border-radius: 10px;
+}
+
+.message h2 {
+  color: #6d28d9;
+}
+
+button {
+  padding: 11px 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #7c3aed;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5b21b6;
+}
