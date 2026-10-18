@@ -1,4 +1,3 @@
-
 const mongoose = require("mongoose");
 
 const mediaSchema = new mongoose.Schema(
@@ -8,19 +7,23 @@ const mediaSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+
     type: {
       type: String,
       enum: ["Movie", "TV Series", "Web Series", "Anime"],
       required: true,
     },
+
     genre: {
       type: String,
       default: "",
     },
+
     year: {
       type: Number,
       default: null,
     },
+
     status: {
       type: String,
       enum: [
@@ -31,20 +34,17 @@ const mediaSchema = new mongoose.Schema(
       ],
       default: "Plan to Watch",
     },
+
     rating: {
       type: Number,
       min: 0,
       max: 10,
       default: null,
     },
+
     image: {
       type: String,
       default: "",
-    },
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required: true,
     },
   },
   {
